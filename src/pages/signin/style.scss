@@ -1,0 +1,92 @@
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  .background-image {
+    position: relative;
+    .overlay-image {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.449);
+      width: 100%;
+      height: 100%;
+    }
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+  .login {
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    &__left-side {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .intro {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .app-icon {
+          overflow: hidden;
+          background-color: white;
+          padding: 6px 5px 4px 5px;
+          border-radius: 8px;
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+    }
+    &__right-side {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      .form-container {
+        background-color: white;
+        width: 400px;
+        padding: 48px 48px 72px 48px;
+        border-radius: 6px;
+      }
+      .icon {
+        text-align: left;
+      }
+      .title {
+        text-align: left;
+        font-weight: 500;
+      }
+      .subtitle {
+        color: rgb(86, 86, 86);
+        text-align: left;
+        margin-bottom: 12px;
+        display: flex;
+        gap: 8px;
+        .subtitle-redirect {
+          color: #0269d0;
+          text-decoration: none;
+        }
+        .subtitle-redirect:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+      .form {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 32px;
+        margin-top: 24px;
+      }
+    }
+  }
+}
